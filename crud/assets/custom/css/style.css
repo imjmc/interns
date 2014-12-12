@@ -1,0 +1,47 @@
+
+.cus-container
+{
+	width:300px;
+	height:auto;
+	margin:auto;
+	border:1px solid #337ab7;
+	padding:0px 20px 5px 20px;
+	border-radius: 4px;
+}
+
+.fp_link
+{
+	margin-left:-10px;
+}
+
+.heading-title
+{
+	text-align:center;
+}
+
+.btn-right
+{
+	float:right;
+}
+
+.brand_logo
+{
+	margin-top:-7px;
+}
+
+.error_message
+{
+	text-align:center;
+	color:#990000;
+	font-size:16px;
+}
+
+.customize
+{
+	padding:0px 0px 0px 0px;
+}
+
+#pswreset_clear_btn
+{
+	float:right;
+}
