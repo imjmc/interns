@@ -6,4 +6,5 @@
   <dd><a href="#">Employee</a></dd> 
   <dd><a href="#">Customer</a></dd> 
   <dd><a href="#">Products</a></dd>
+  <dd class="active"><a href="<?php echo base_url();?>welcome/cms_content">Cms</a></dd>
 </dl>

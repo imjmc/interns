@@ -382,6 +382,42 @@ class Welcome extends CI_Controller {
 		}
 	}
 	
+	public function cms_content()
+	{
+		$this->load->view('welcome_message');
+		$this->load->view('menu_bar2');
+		$this->tabs();
+		$this->load->view('cms_page');
+		
+	}
+	
+	public function cms_message()
+	{
+		$msg_title = $this->input->post('msg_title');
+		$msg_content = $this->input->post('msg_content');
+		$content_position = $this->input->post('rbtn');
+		$this->load->model('cms_submission');
+		$this->cms_submission->submission_process($msg_title,$msg_content,$content_position);
+	}
+	
+	public function manage_cms()
+	{
+			$crud = new grocery_CRUD();
+			$crud->set_theme('datatables');
+			$crud->set_table('cms_content');
+			$crud->set_subject('Manage CMS Content');
+			$output = $crud->render();
+			$this->cms_output($output);
+	}
+	
+	public function cms_output($output = null)
+	{
+		$this->load->view('welcome_message');
+		$this->load->view('menu_bar2');
+		$this->tabs();
+		$this->load->view('cms_output',$output);
+	}
+	
 	public function dest_session()
 	{
 		$this->session->sess_destroy();

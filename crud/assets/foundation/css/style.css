@@ -139,3 +139,51 @@ span
 	border-radius:4px;
 	color:#CCCCCC;
 }
+
+.submit_cms_btn
+{
+	width:100%;
+}
+
+.msg_title
+{
+	border-bottom:1px #CCCCCC solid;
+	border-radius:4px;
+	height:30px;
+}
+
+.first_column .msg_title
+{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:5px;
+}
+
+
+.second_column .msg_title
+{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:5px;
+}
+
+.first_column p
+{
+	font-size:16px;
+	margin-left:12px;
+	text-align:justify;
+}
+
+
+.second_column p
+{
+	font-size:16px;
+	margin-left:12px;
+	text-align:justify;
+}
+
+
+
+
+
+
